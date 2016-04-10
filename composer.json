@@ -1,0 +1,23 @@
+{
+    "name": "koodoo/laravel-trait-encrypt",
+    "description": "A Laravel Eloquent Model trait for Encrypting modal data",
+    "type": "package",
+    "license": "MIT",
+    "keywords": ["laravel", "eloquent", "encript"],
+    "authors": [
+        {
+            "name": "Sam Whisker",
+            "email": "sam@koodoocreative.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Koodoo\\laravelTraitEncrypt\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
