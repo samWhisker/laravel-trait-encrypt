@@ -3,7 +3,7 @@
     "description": "A Laravel Eloquent Model trait for Encrypting modal data",
     "type": "package",
     "license": "MIT",
-    "keywords": ["laravel", "eloquent", "encript"],
+    "keywords": ["laravel", "eloquent", "encrypt"],
     "authors": [
         {
             "name": "Sam Whisker",
