@@ -15,12 +15,14 @@ trait Encryptable
        return $value;
    }
 
-   public function setAttribute($key, $value)
+   public function setAttribute($key, $value, $encrypt = true)
    {
-       if (in_array($key, $this->encryptable)) {
-           $value = \Crypt::encrypt($value);
-       }
-
-       return parent::setAttribute($key, $value);
+      if($encrypt)
+      {
+          if (in_array($key, $this->encryptable)) {
+              $value = \Crypt::encrypt($value);
+          }
+      }
+      return parent::setAttribute($key, $value);
    }
 }
