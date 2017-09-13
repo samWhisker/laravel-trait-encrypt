@@ -9,7 +9,12 @@ trait Encryptable
        $value = parent::getAttribute($key);
 
        if (in_array($key, $this->encryptable)) {
-           $value = \Crypt::decrypt($value);
+           try {
+               $value = \Crypt::decrypt($value);
+           } catch (DecryptException $e) {
+               $value = $value;
+               Log::error('Value not decyrptable');
+           }
        }
 
        return $value;
