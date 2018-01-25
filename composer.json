@@ -1,6 +1,6 @@
 {
     "name": "koodoo/laravel-trait-encrypt",
-    "description": "A Laravel Eloquent Model trait for Encrypting modal data",
+    "description": "A Laravel Eloquent Model trait for Encrypting model data",
     "type": "package",
     "license": "MIT",
     "keywords": ["laravel", "eloquent", "encrypt"],
